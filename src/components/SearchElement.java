@@ -8,13 +8,13 @@ import java.util.List;
 public class SearchElement {
     private enum languagesEnum {Java, C, JavaScript, HTML, CSS, Python};
     private String description;
-    private List<String> keywords;
-    private List<String> programmingLanguages;
+    private List<String> keywords = new ArrayList<>();
+    private List<String> programmingLanguages = new ArrayList<>();
 
-
-    public SearchElement() {
-        this.keywords = new ArrayList<>();
-        this.programmingLanguages = new ArrayList<>();
+    public SearchElement(String description, List<String> keywords, List<String> programmingLanguages) {
+        this.description = description;
+        this.keywords = keywords;
+        this.programmingLanguages = programmingLanguages;
     }
 
     public String getDescription() {
