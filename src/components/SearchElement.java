@@ -35,7 +35,7 @@ public class SearchElement {
             if(programmingLanguage.equals(languageEnum.toString()))
                 check = true;
         if(check)
-            throw new InvalidLanguageException("Language " + programmingLanguage + " not found.");
+            //throw new Exception("Invalid Language");
         programmingLanguages.add(programmingLanguage);
     }
 
