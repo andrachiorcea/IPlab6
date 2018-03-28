@@ -1,5 +1,7 @@
 package components;
 
+import exceptions.InvalidLanguageException;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -27,13 +29,13 @@ public class SearchElement {
         keywords.add(keyword);
     }
 
-    public void addProgramminglanguage(String programmingLanguage) throws Exception {
+    public void addProgramminglanguage(String programmingLanguage) throws InvalidLanguageException {
         boolean check = false;
         for(languagesEnum languageEnum : languagesEnum.values())
             if(programmingLanguage.equals(languageEnum))
                 check = true;
         if(check)
-            throw new Exception("Invalid Language");
+            //throw new Exception("Invalid Language");
         programmingLanguages.add(programmingLanguage);
     }
 
