@@ -1,4 +1,6 @@
+package components;
 import javax.swing.*;
+
 
 public class GPanel extends JPanel {
     private final GraphicInterface frame;
