@@ -1,8 +1,10 @@
+package components;
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import components.SearchElement;
 import components.SearchElementBuilder;
+
 
 public class GPanel extends JPanel {
     private final GraphicInterface frame;
